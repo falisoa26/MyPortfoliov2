@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import  { useEffect, } from 'react'
 import Text from '../../general/text/Text'
 import './Home.scss'
 import Button from '../../general/button/Button'
@@ -17,13 +17,11 @@ import gsap from 'gsap'
 
 
 type Props = {
-    setView: React.Dispatch<React.SetStateAction<boolean>>,
-    setRoot: React.Dispatch<React.SetStateAction<boolean>>,
-    view: boolean,
-    roote: boolean
+    
+   
 }
 
-const Home = ({setView, setRoot, view, roote}: Props) => {
+const Home = ({}: Props) => {
     useEffect(() => {
         gsap.timeline().fromTo('.nom', {
             opacity: 0,
@@ -42,14 +40,7 @@ const Home = ({setView, setRoot, view, roote}: Props) => {
 
         })
     })
-    useLayoutEffect(()=>{
-        if(!view){
-            setView(true);
-        }
-        if(roote){
-            setRoot(false);
-        }
-    })
+    
 
 
     return (

@@ -34,13 +34,12 @@ import { useState } from 'react';
 
 function App() {
   const [view, setView] = useState<boolean>(true);
-  const [roote, setRoot] = useState<boolean>(false);
   return (
     <>
       <BrowserRouter>
-        <Header setView={setView} view={view} roote={roote} />
+        <Header view={view} setView={setView} />
         <Routes>
-          <Route path='/' element={<Home setRoot={setRoot} setView={setView} view={view} roote={roote} />} />
+          <Route path='/' element={<Home />} />
 
 
         </Routes>

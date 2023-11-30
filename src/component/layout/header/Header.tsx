@@ -9,7 +9,6 @@ import Menu from '../../general/icons/Menu'
 type props = {
     setView: React.Dispatch<React.SetStateAction<boolean>>,
     view: boolean,
-    roote: boolean
 }
 
 const Header = ({ setView, view }: props) => {
