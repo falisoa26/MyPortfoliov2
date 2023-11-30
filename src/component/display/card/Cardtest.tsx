@@ -1,11 +1,10 @@
-import React from 'react'
 import Text from '../../general/text/Text'
 import Sir from '../../../Image/ImgHome/ImgTestimonial/Ellipse 5.png'
 import { Rating } from '@mui/material'
 
 type Props = {}
 
-const Cardtest = (props: Props) => {
+const Cardtest = ({}: Props) => {
     return (
         <>
             <div className="cardtemoingnage">
